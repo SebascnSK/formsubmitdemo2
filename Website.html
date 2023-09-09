@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <title>Website</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #007acc; 
+            color: white;
+            background-image: linear-gradient(to bottom, #002266, #00bfff);
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 30px;
+            border: 5px solid white; 
+            border-radius: 15px;
+            margin-top: 90px;
+        }
+        .container2 {
+            width: 100%;
+            text-align: center; 
+            color: black; 
+            padding: 10px 0; 
+            position: absolute; 
+            top: 0%;
+            background: white;
+        }
+        h1 {
+            text-align: center; 
+        }
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        textarea {
+            width: 96%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            margin: 5px auto;
+        }
+        input[type="submit"] {
+            background-color: white; 
+            color: #007acc;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        input[type="submit"]:hover {
+            background-color: #00bfff; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container2">
+        <h2>Druhý kontajner</h2>
+    </div>
+    <div class="container">
+        <h1>Kontakt</h1>
+        <form action="https://formsubmit.co/sebastian.gerec@gmail.com" method="POST">
+            <label for="meno">Meno:</label>
+            <input type="text" id="meno" name="meno" required>
+
+            <label for="priezvisko">Priezvisko:</label>
+            <input type="text" id="priezvisko" name="priezvisko" required>
+
+            <label for="telefon">Telefónne číslo:</label>
+            <input type="tel" id="telefon" name="telefon" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="sprava">Správa:</label>
+            <textarea id="sprava" name="sprava" rows="5" required></textarea>
+
+            <input type="submit" value="Odoslať">
+        </form>
+    </div>
+</body>
+</html>
